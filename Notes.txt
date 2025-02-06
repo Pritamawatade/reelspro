@@ -8,11 +8,21 @@ Why we are creating the types.d.ts file?
     in our project. **
 
 ******NEXT AUTH******
-Next auth is very complex thing to understand. first of all you have to create the next-auth.d.ts file 
-this is file is responsible for the declaring the mudule named next-auth. to be honest i still not get it the 
-whole process of how the next auth work but i am trying. 
-Then in the auth.ts file  we have create the providers , callbacks , pages and session and secret objects.
-providers are like the source of the info about the user. the logic checking if the user is logged in or not is stored
-in the providers. 
-then callbacks : - callbacks are basically tell the code that what should we do when the login function takes the 
-place. what should happen after the login is written in callbacks.
+    Next auth is very complex thing to understand. first of all you have to create the next-auth.d.ts file 
+    this is file is responsible for the declaring the mudule named next-auth. to be honest i still not get it the 
+    whole process of how the next auth work but i am trying. 
+    Then in the auth.ts file  we have create the providers , callbacks , pages and session and secret objects.
+    providers are like the source of the info about the user. the logic checking if the user is logged in or not is stored
+    in the providers. 
+    then callbacks : - callbacks are basically tell the code that what should we do when the login function takes the 
+    place. what should happen after the login is written in callbacks.
+
+    So the whole process of next auth is look like this. 
+    first of all after insalling next-auth. 
+    you need to create the next-auth.d.ts file that will declare the types for the session and user.
+    then our next job is create the providers. --> in providers basically there are logic of checking if the user
+    exist or checking if the password and email is right and wrong. 
+    after we need to create the callbacks. as the name suggest callbacks are functions that run after happening something
+    in callbacks session and jwt two methods take place.
+    after that pages ,  session and secret are the objects that need to be created.
+     
