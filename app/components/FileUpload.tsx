@@ -11,8 +11,6 @@ interface FileUploadProps {
   fileType?: "image" | "video";
 }
 
-const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
-const urlEndpoint = process.env.NEXT_PUBLIC_URL_ENDPOINT;
 
 export default function FileUpload({
   onSuccess,
