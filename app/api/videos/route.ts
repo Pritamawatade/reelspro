@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 export async function GET(){
     try {
-        await connectToDatabase();
+        await connectToDatabase
         const videos = await Video.find({}).sort({ createdAt: -1 }).lean();
 
         if(!videos || videos.length === 0){
